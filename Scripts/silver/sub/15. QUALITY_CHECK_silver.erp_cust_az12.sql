@@ -1,0 +1,44 @@
+-- QUALITY checking data from epr.cust_az12
+
+
+-- PREPARING CID FOR CST_KEY IN CRM_SALES_DETAILS 
+SELECT 
+		cid,
+	CASE
+		WHEN cid LIKE 'NAS%' THEN SUBSTRING(CID, 4, LEN(CID))
+		ELSE cid 
+	END cid,
+		bdate,
+		gen
+FROM Silver.erp_cust_az12
+WHERE CASE
+		WHEN cid LIKE 'NAS%' THEN SUBSTRING(CID, 4, LEN(CID))
+		ELSE cid 
+	END NOT IN (SELECT DISTINCT cst_key FROM silver.crm_cust_info )
+
+SELECT * FROM Silver.crm_cust_info
+
+-- CHECKING THE BDATE
+
+SELECT BDATE,
+	CASE
+		WHEN BDATE >= GETDATE() THEN NULL
+		ELSE BDATE
+	END BDATE1
+FROM Silver.erp_cust_az12
+WHERE BDATE <= '1925-01-01' OR BDATE IS NULL OR BDATE >= GETDATE()
+ORDER BY BDATE
+
+-- CHECKING THE GEN COLUMN
+
+SELECT DISTINCT GEN
+FROM Silver.erp_cust_az12
+
+SELECT DISTINCT
+		GEN AS OLD_GEN,
+	CASE
+		WHEN UPPER(TRIM(GEN)) IN ('F','FEMALE') THEN 'Female'
+		WHEN UPPER(TRIM(GEN)) IN ('M','MALE') THEN 'Male'
+		ELSE 'n/a'
+	END GEN
+FROM Silver.erp_cust_az12
