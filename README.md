@@ -81,30 +81,31 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 ## 📂 Repository Structure
 
+```
 data-warehouse-project/
 │
-├── datasets/ # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
-├── docs/ # Project documentation and architecture details
-│ ├── etl.drawio # Draw.io file shows all different techniques and methods of ETL
-│ ├── data_architecture.drawio # Draw.io file shows the project's architecture
-│ ├── data_catalog.md # Catalog of datasets, including field descriptions and metadata
-│ ├── data_flow.drawio # Draw.io file for the data flow diagram
-│ ├── data_models.drawio # Draw.io file for data models (star schema)
-│ ├── naming-conventions.md # Consistent naming guidelines for tables, columns, and files
+├── docs/                               # Project documentation and architecture details
+│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
+│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
+│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
+│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
+│   ├── data_models.drawio              # Draw.io file for data models (star schema)
+│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
-├── scripts/ # SQL scripts for ETL and transformations
-│ ├── bronze/ # Scripts for extracting and loading raw data
-│ ├── silver/ # Scripts for cleaning and transforming data
-│ ├── gold/ # Scripts for creating analytical models
+├── scripts/                            # SQL scripts for ETL and transformations
+│   ├── bronze/                         # Scripts for extracting and loading raw data
+│   ├── silver/                         # Scripts for cleaning and transforming data
+│   ├── gold/                           # Scripts for creating analytical models
 │
-├── tests/ # Test scripts and quality files
+├── tests/                              # Test scripts and quality files
 │
-├── README.md # Project overview and instructions
-├── LICENSE # License information for the repository
-├── .gitignore # Files and directories to be ignored by Git
-└── requirements.txt # Dependencies and requirements for the project
-
+├── README.md                           # Project overview and instructions
+├── LICENSE                             # License information for the repository
+├── .gitignore                          # Files and directories to be ignored by Git
+└── requirements.txt                    # Dependencies and requirements for the project
+```
 ---
 
 ## 🛡️ License
@@ -117,8 +118,8 @@ Hi, I'm **Ayush Ranabhat**. I’m an aspiring data analyst with a background in 
 
 ## Let's stay in touch ✌
 
-[![Email](https://img.shields.io/badge/Email-Ayura833@gmail.com-blue)](mailto:Ayura833@gmail.com)
-[![Email](https://img.shields.io/badge/Email-Ayurasen@outlook.com-blue)](mailto:Ayurasen@outlook.com)
-[![Facebook](https://img.shields.io/badge/Facebook-Profile-blue)](https://www.facebook.com/Ayurasen123)
-[![Instagram](https://img.shields.io/badge/Instagram-Profile-pink)](https://www.instagram.com/_uke_p/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/ayush-ranabhat-87b577262/)
+[![Email](https://img.shields.io/badge/Email-Ayura833@gmail.com-blue?style=flat-square&logo=gmail&logoColor=white)](mailto:Ayura833@gmail.com)  
+[![Email](https://img.shields.io/badge/Email-Ayurasen@outlook.com-blue?style=flat-square&logo=microsoft-outlook&logoColor=white)](mailto:Ayurasen@outlook.com)  
+[![Facebook](https://img.shields.io/badge/Facebook-Profile-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/Ayurasen123)  
+[![Instagram](https://img.shields.io/badge/Instagram-Profile-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/_uke_p/)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-ranabhat-87b577262/)
