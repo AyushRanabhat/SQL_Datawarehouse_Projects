@@ -115,7 +115,7 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 Hi, I'm **Ayush Ranabhat**. I’m an aspiring data analyst with a background in finance and experience working with data in banking and clerical roles. Right now, I’m learning on my own and building a data warehouse project to sharpen my skills and understand data systems more deeply. If you notice anything that can be improved in this project, feel free to let me know. A quick thanks to Baraa for the inspiration and support.
 
-## Let's stay in touch
+## Let's stay in touch ✌
 
 [![Email](https://img.shields.io/badge/Email-Ayura833@gmail.com-blue)](mailto:Ayura833@gmail.com)
 [![Email](https://img.shields.io/badge/Email-Ayurasen@outlook.com-blue)](mailto:Ayurasen@outlook.com)
